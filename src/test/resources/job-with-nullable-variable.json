@@ -1,0 +1,34 @@
+{
+  "partitionId": 1,
+  "value": {
+    "type": "work",
+    "errorMessage": "failed",
+    "processInstanceKey": 2251799813685251,
+    "retries": 0,
+    "errorCode": "",
+    "deadline": 1622182689787,
+    "bpmnProcessId": "testProcess",
+    "processDefinitionKey": 2251799813685249,
+    "customHeaders": {
+      "foo": "bar"
+    },
+    "worker": "default",
+    "elementId": "task",
+    "elementInstanceKey": 2251799813685263,
+    "processDefinitionVersion": 1,
+    "variables": {
+      "multicardStatus": {},
+      "updateStatusResult": null
+    }
+  },
+  "key": 2251799813685264,
+  "timestamp": 1622182389810,
+  "recordType": "EVENT",
+  "position": 40,
+  "valueType": "JOB",
+  "intent": "FAILED",
+  "rejectionType": "NULL_VAL",
+  "rejectionReason": "",
+  "brokerVersion": "1.1.5",
+  "sourceRecordPosition": 39
+}

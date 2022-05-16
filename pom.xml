@@ -13,7 +13,7 @@
 			<dependency>
 				<groupId>io.camunda</groupId>
 				<artifactId>zeebe-bom</artifactId>
-				<version>1.2.3</version>
+				<version>1.2.9</version>
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>
@@ -21,30 +21,24 @@
 	</dependencyManagement>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>io.camunda</groupId>
-			<artifactId>zeebe-client-java</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>io.camunda</groupId>
-			<artifactId>zeebe-test</artifactId>
+			<artifactId>zeebe-protocol-jackson</artifactId>
 			<scope>test</scope>
 		</dependency>
 
 		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-			<version>2.17.1</version>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+			<scope>test</scope>
 		</dependency>
-
 		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-slf4j-impl</artifactId>
-			<version>2.11.1</version>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-core</artifactId>
+			<version>3.22.0</version>
+			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
 
 	<repositories>
@@ -79,8 +73,8 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>11</source>
+					<target>11</target>
 				</configuration>
 			</plugin>
 		</plugins>
